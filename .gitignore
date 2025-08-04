@@ -1,0 +1,90 @@
+# 大模型文件
+模型与数据/sam_vit_h_4b8939.pth
+模型与数据/yolov8n.pt
+模型与数据/*.pth
+模型与数据/*.pt
+模型与数据/*.safetensors
+模型与数据/*.bin
+模型与数据/*.h5
+模型与数据/*.pkl
+
+# Stable Diffusion模型
+models/
+*.ckpt
+*.safetensors
+
+# 输出文件
+outputs/
+*.png
+*.jpg
+*.jpeg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pth
+*.pt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 环境文件
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+temp/
+tmp/
+
+# 缓存文件
+.cache/
+cache/
+
+# 配置文件（包含敏感信息）
+config.ini
+secrets.json
+*.key
+*.pem 

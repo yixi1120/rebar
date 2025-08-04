@@ -1,0 +1,48 @@
+{
+  "rebar_types": {
+    "main_rebar": [
+      "Ultra-realistic photo of construction site main rebar — tall vertical ribbed steel bars, metallic surface with rusty orange patches and silver highlights, hard reflections, densely packed in a reinforcement cage above fresh grey concrete slab, background blurred high-rise buildings, overcast daylight, photorealism, 8 k, high-contrast, shallow depth of field",
+      "Professional construction photo of main reinforcement bars — vertical ribbed steel bars with metallic surface, rusty orange color, hard reflections, densely packed in column cage, construction site, high resolution, sharp focus",
+      "Ultra-realistic photo of main rebar — tall vertical ribbed steel bars, metallic surface with rusty orange patches, hard reflections, densely packed in reinforcement cage, construction site, photorealism"
+    ],
+    "stirrup": [
+      "Ultra-realistic photo of steel stirrup rebar — rectangular ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, bent into rectangular shape, densely packed in a reinforcement cage, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of stirrup reinforcement — rectangular ribbed steel bars with metallic surface, rusty orange color, hard reflections, bent shape, construction site, high resolution",
+      "Ultra-realistic photo of steel stirrup rebar — rectangular ribbed steel bars with metallic surface, rusty orange patches, hard reflections, bent shape, construction site, photorealism"
+    ],
+    "distribution_rebar": [
+      "Ultra-realistic photo of steel distribution rebar — horizontal ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, densely packed in a grid pattern, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of distribution reinforcement — horizontal ribbed steel bars with metallic surface, rusty orange color, hard reflections, grid pattern, construction site, high resolution",
+      "Ultra-realistic photo of steel distribution rebar — horizontal ribbed steel bars with metallic surface, rusty orange patches, hard reflections, grid pattern, construction site, photorealism"
+    ],
+    "bent_rebar": [
+      "Ultra-realistic photo of bent steel rebar — curved ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, bent at 90 degrees, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of bent reinforcement — curved ribbed steel bars with metallic surface, rusty orange color, hard reflections, 90-degree bend, construction site, high resolution",
+      "Ultra-realistic photo of bent steel rebar — curved ribbed steel bars with metallic surface, rusty orange patches, hard reflections, bent shape, construction site, photorealism"
+    ],
+    "hook_end": [
+      "Ultra-realistic photo of steel rebar with hook end — ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, 90-degree hook at the end, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of rebar with hook — ribbed steel bars with metallic surface, rusty orange color, hard reflections, 90-degree hook, construction site, high resolution",
+      "Ultra-realistic photo of steel rebar with hook end — ribbed steel bars with metallic surface, rusty orange patches, hard reflections, hook shape, construction site, photorealism"
+    ],
+    "binding_wire": [
+      "Ultra-realistic photo of steel rebar tied with wire — ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, tied with binding wire, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of rebar tied with wire — ribbed steel bars with metallic surface, rusty orange color, hard reflections, binding wire, construction site, high resolution",
+      "Ultra-realistic photo of steel rebar tied with wire — ribbed steel bars with metallic surface, rusty orange patches, hard reflections, wire ties, construction site, photorealism"
+    ],
+    "intersection": [
+      "Ultra-realistic photo of steel rebar intersection — crossing ribbed steel bars with metallic surface, rusty orange patches and silver highlights, hard reflections, densely packed at intersection point, construction site, photorealism, 8 k, high-contrast",
+      "Professional construction photo of rebar intersection — crossing ribbed steel bars with metallic surface, rusty orange color, hard reflections, intersection point, construction site, high resolution",
+      "Ultra-realistic photo of steel rebar intersection — crossing ribbed steel bars with metallic surface, rusty orange patches, hard reflections, crossing point, construction site, photorealism"
+    ]
+  },
+  "negative_prompt": "fabric, textile, bamboo, wood, straw, rope, plastic, cartoon, painting, blurry, lowres, artifacts, watermark, text, logo",
+  "training_parameters": {
+    "learning_rate": 0.0001,
+    "num_epochs": 100,
+    "batch_size": 1,
+    "resolution": 768,
+    "save_every": 10,
+    "validation_every": 5
+  }
+}

@@ -6,6 +6,7 @@ LoRA推理脚本 - 钢筋检测专用
 
 import torch
 from diffusers import StableDiffusionPipeline
+from peft import PeftModel
 from pathlib import Path
 import argparse
 
@@ -20,7 +21,7 @@ def load_lora_model(base_model_path, lora_path):
     )
     
     # 加载LoRA权重
-    pipe.load_lora_weights(lora_path)
+    pipe.unet = PeftModel.from_pretrained(pipe.unet, lora_path)
     
     if torch.cuda.is_available():
         pipe = pipe.to("cuda")
@@ -54,7 +55,7 @@ def generate_rebar_images(pipe, prompts, output_dir, num_images=1):
 
 def main():
     parser = argparse.ArgumentParser(description="LoRA推理")
-    parser.add_argument("--base-model", type=str, default="models/CompVis/stable-diffusion-v1-4", help="基础模型路径")
+    parser.add_argument("--base-model", type=str, default="runwayml/stable-diffusion-v1-5", help="基础模型路径")
     parser.add_argument("--lora-path", type=str, required=True, help="LoRA模型路径")
     parser.add_argument("--output", type=str, default="lora_outputs", help="输出目录")
     parser.add_argument("--num-images", type=int, default=1, help="每类生成图像数量")
